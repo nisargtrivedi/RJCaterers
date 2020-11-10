@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<GridView
+    android:layout_margin="@dimen/_6sdp"
+    android:layout_above="@id/llBottom"
+    android:horizontalSpacing="@dimen/_20sdp"
+    android:verticalSpacing="@dimen/_10sdp"
+    android:numColumns="2"
+    android:id="@+id/gvItems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></GridView>
+
+    <LinearLayout
+        android:background="@color/button_color"
+        android:orientation="horizontal"
+        android:id="@+id/llBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <TextView
+            android:id="@+id/tvCounter"
+            android:text="Today Counter Rs.0"
+            android:textStyle="bold"
+            android:fontFamily="@font/m_medium"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+</RelativeLayout>

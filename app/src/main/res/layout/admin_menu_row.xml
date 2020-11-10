@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llItem"
+    android:background="@drawable/border_button_two"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<Button
+    android:ellipsize="marquee"
+    android:textAllCaps="true"
+    android:id="@+id/tvItem"
+    android:textSize="@dimen/_13ssp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:text=""
+    android:gravity="center"
+    android:fontFamily="@font/m_medium"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"></Button>
+
+</LinearLayout>

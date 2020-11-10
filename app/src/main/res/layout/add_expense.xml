@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/m_medium"
+            android:textColor="@color/black"
+            android:text="Expense date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/eDate"
+            android:paddingLeft="@dimen/_5sdp"
+            android:background="@drawable/border_button"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|left"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ps_regular"
+            android:hint="From Date"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_height="@dimen/_40sdp"></TextView>
+        <TextView
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/m_medium"
+            android:textColor="@color/black"
+            android:text="Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edtPrice"
+            android:maxLength="10"
+            android:digits="0123456789"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/m_medium"
+            android:inputType="number"
+            android:paddingLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/border_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"></EditText>
+        <TextView
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/m_medium"
+            android:textColor="@color/black"
+            android:text="Expense details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:id="@+id/edtDetail"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:background="@drawable/border_button"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"></EditText>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:fontFamily="@font/m_medium"
+            android:textSize="@dimen/_14ssp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/button_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"></Button>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

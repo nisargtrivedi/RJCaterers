@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llCashItem"
+    android:background="@drawable/border_button_two"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<Button
+    android:ellipsize="marquee"
+    android:textAllCaps="true"
+    android:id="@+id/tvItem"
+    android:textSize="@dimen/_13ssp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:text="JALEBI"
+    android:gravity="center"
+    android:fontFamily="@font/m_medium"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"></Button>
+
+<Button
+    android:ellipsize="marquee"
+    android:textStyle="bold"
+    android:textSize="@dimen/_12ssp"
+    android:layout_margin="@dimen/_1sdp"
+    android:background="@color/white"
+    android:textColor="@color/button_color"
+    android:fontFamily="@font/m_medium"
+    android:gravity="center"
+    android:id="@+id/tvPrice"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"></Button>
+</LinearLayout>

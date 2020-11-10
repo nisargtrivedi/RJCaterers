@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/border_button_two"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:text="TOTAL INCOME"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvIncome"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@drawable/border_button_two"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:gravity="center|right"
+            android:text="00.00"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/border_button_two"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:text="TOTAL EXPENSE"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvExpense"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@drawable/border_button_two"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:gravity="center|right"
+            android:text="00.00"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@drawable/border_button_two"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:text="TOTAL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvTotal"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@drawable/border_button_two"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:gravity="center|right"
+            android:text="00.00"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

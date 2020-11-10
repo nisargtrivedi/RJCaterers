@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_above="@id/tvBottom"
+        android:horizontalSpacing="@dimen/_20sdp"
+        android:verticalSpacing="@dimen/_10sdp"
+        android:numColumns="2"
+        android:id="@+id/gvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+    <TextView
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:text="opening balance rs. 0"
+        android:textSize="@dimen/_12ssp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:fontFamily="@font/ps_regular"
+        android:id="@+id/tvBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"></TextView>
+</RelativeLayout>

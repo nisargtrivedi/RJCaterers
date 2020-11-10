@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.posapp">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity_"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".AdminSetup_" android:screenOrientation="fullSensor" android:label="Application Admin Setup">
+
+        </activity>
+        <activity android:name=".Splash_" android:screenOrientation="fullSensor" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityItemAdd_" android:screenOrientation="portrait" android:parentActivityName=".ActivityItem_" android:label="ADD ITEMS"></activity>
+    <activity android:name=".ActivityItem_" android:screenOrientation="portrait" android:label="Items" android:parentActivityName=".ActivityMenu_"></activity>
+    <activity android:name=".ActivityCashItem_" android:screenOrientation="portrait" android:label="Cash Register" android:parentActivityName=".Splash_"></activity>
+        <activity android:name=".ActivityCartItem_" android:screenOrientation="portrait" android:label="Cart Detail" android:parentActivityName=".ActivityCashItem_"></activity>
+        <activity android:name=".ActivityMenu_" android:screenOrientation="portrait" android:label="Admin Menu" android:parentActivityName=".Splash_"></activity>
+        <activity android:name=".ActivitySalesRegister_" android:screenOrientation="portrait" android:label="Sales Register" android:parentActivityName=".ActivityMenu_"></activity>
+
+        <activity android:name=".ActivityDialog_" android:screenOrientation="portrait" android:theme="@style/MyAppTheme"></activity>
+
+        <activity android:name=".ActivityFilter_" android:screenOrientation="portrait" android:theme="@style/MyAppTheme"></activity>
+        <activity android:name=".TransactionItem_" android:label="Transaction Detail" android:parentActivityName=".ActivitySalesRegister_" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ExpenseListActivity_" android:label="Expense List" android:parentActivityName=".ExpenseListActivity_" android:screenOrientation="portrait"></activity>
+       <activity android:name=".AddExpense_" android:screenOrientation="portrait" android:label="Add New Expense" android:parentActivityName=".ExpenseListActivity_"></activity>
+        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".DeviceListActivity_" android:theme="@style/MyAppTheme"></activity>
+        <activity android:name=".Account_" android:screenOrientation="portrait" android:label="Account" android:parentActivityName=".ActivityMenu_"></activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

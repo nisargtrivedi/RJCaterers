@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.posapp.MainActivity">
+    <item
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:id="@+id/action_cart"
+        android:orderInCategory="100"
+        android:title="Item Cart"
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="always" />
+
+    <item
+        android:visible="false"
+        android:icon="@drawable/ic_print_black_24dp"
+        android:id="@+id/print"
+        android:orderInCategory="100"
+        android:title="Printer"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        android:id="@+id/filerList"
+        android:orderInCategory="100"
+        android:title="Filter"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_done_black_24dp"
+        android:id="@+id/action_done"
+        android:orderInCategory="100"
+        android:title="Done"
+        app:showAsAction="always" />
+</menu>
