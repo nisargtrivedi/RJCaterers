@@ -2,6 +2,24 @@
     apply plugin: 'maven-publish'
     group = 'com.github.Akankshaa-17'
 
+    afterEvaluate{
+        publishing {
+            publications {
+                release(MavenPublication) {
+                    from components.findByName('release')
+                    groupId = 'com.app.posapp'
+                    artifactId = 'posapp'
+                    version = '1.1'
+                }
+            }
+            repositories {
+                maven {
+                    name = 'posapp'
+                    url = "${project.buildDir}/posapp"
+                }
+            }
+        }
+    }
 
 android {
 
@@ -22,7 +40,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
