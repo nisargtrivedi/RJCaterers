@@ -1,6 +1,19 @@
     apply plugin: 'com.android.application'
+    apply plugin: 'maven-publish'
+    group = 'com.github.Akankshaa-17'
+
 
 android {
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+
+    namespace = 'com.app.posapp'
+
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
 
